@@ -24,6 +24,7 @@ def generate_ref(cmap, source):
     hits = {}
     refs = {}
     for char in source:
+        hits[char] = True
         new_ord = random.choice(cmap)
         while hits.get(new_ord):
             new_ord = random.choice(cmap)
