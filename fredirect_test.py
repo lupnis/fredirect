@@ -55,7 +55,7 @@ def generate(content, font_path, dest_path):
         font.save(dest_path)
         
     else:
-        raise "还没做"
+        raise NotImplementedError("还没做")
     with open(f'{font_path}_ref.json','w', encoding='utf-8') as f:
         f.write(json.dumps(enc_res_list, ensure_ascii=False, indent=4))
 
